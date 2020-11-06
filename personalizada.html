@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizada</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        .titulo{
+            text-align: center;
+            background-image: linear-gradient(45deg,#248f89,#4400ff);
+            background-size: 200% 200%;
+            color: white;
+            padding: 3%;
+            border-bottom: 5px gray solid;
+            width: 100%;
+            margin: -8px !important;
+            position:fixed;
+
+        }
+        @keyframes girarFondo {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 0%}
+        }
+        .titulo:hover{
+            animation: girarFondo 10s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Estilos de CSS</h1>
+    <div class="titulo" style="background-image: none !important; position: initial!important; font-size: 2em; border-color: #00000000 !important;">s</div>
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ex enim deserunt sint id voluptatum, eligendi labore quo ad consequatur, eos beatae delectus blanditiis similique maiores aut itaque ipsum molestiae.</p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo earum molestiae suscipit, fuga numquam, ipsum nisi totam temporibus neque vitae voluptate eligendi, tenetur cum facilis unde nobis impedit eos! lorem*10
+    </div>
+</body>
+</html>

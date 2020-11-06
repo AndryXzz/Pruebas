@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de una tabla</title>
+</head>
+<body>
+    <h2>Actividad 1</h1>
+    <table border="1">
+        <tr>
+            <td>15</td>
+            <td>30</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>60</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+    </table>
+    <h2>Actividad 2</h1><br><hr>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th scope="col">Sabado</th>
+            <th scope="col">Domingo</th>
+        </tr>
+        <tr>
+            <th scope="row">Boletas Vendidas:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <th scope="row">Total Vendidas:</th>
+            <td>$600</td>
+            <td>%675</td>
+        </tr>
+    </table>
+    <h2>Actividad 3</h1><br><hr>
+    <table border="1">
+        <caption="top">Ejemplo de alineaciones y Dimensionados en Columnas</caption>
+        <tr>
+            <th></th>
+            <th>09am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </tr>
+        <tr>
+            <th>Lunes</th>
+            <td colspan="2">Geografía</td>
+            <td>Matemáticas</td>
+            <td>Arte</td>
+        </tr>
+        <tr>
+            <th>Martes</th>
+            <td colspan="3">Técnico prog. soft</td>
+            <td>Ética</td>
+        </tr>
+    </table>
+    <h2>Actividad 4</h1><br><hr>
+    <table border="2">
+        <caption>Ejemplo de ALineaciones y Dimensionado en FIlas</caption>
+        <tr>
+            <th></th>
+            <th>Canal 1</th>
+            <th>Caracol</th>
+            <th>Señal Colombia</th>
+        </tr>
+        <tr>
+            <th>6pm - 7 pm</th>
+            <th rowspan="2">Noticias</th>
+            <th>Concurso</th>
+            <th>Serie</th>
+        </tr>
+        <tr>
+            <th>7pm - 8pm</th>
+            <td>Novela</td>
+            <td>Documental</td>
+        </tr>
+    </table>
+    <h2>Actividad 5</h1><br><hr>
+    <table border="3">
+        <caption>Ejemplo de tablas largas</caption>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Ingresos</th>
+                <th>Gastos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>01 Marzo</th>
+                <td>25000</td>
+                <td>4800</td>
+            </tr>
+            <tr>
+                <th>03 Marzo</th>
+                <td>26000</td>
+                <td>4200</td>
+            </tr>
+            <tr>
+                <th>04 Marzo</th>
+                <td>29000</td>
+                <td>3800</td>
+            </tr>
+            <tr>
+                <th>05 Marzo</th>
+                <td>31000</td>
+                <td>1150</td>
+            </tr>
+            <tr>
+                <th>06 Marzo</th>
+                <td>16800</td>
+                <td>1400</td>
+            </tr>
+            <tr>
+                <th>07 Marzo</th>
+                <td>22600</td>
+                <td>2000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>178900</td>
+                <td>20950</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Actividad 6 </h1><br><hr>
+    <table width="400" cellpadding="10" cellspacing="5" border="1">
+        <caption>EJemplo de espaciado</caption>
+        <tr>
+            <th width="150"></th>
+            <th>Retirado</th>
+            <th>Crédito</th>
+            <th width="150">Balance</th>
+        </tr>
+        <tr>
+            <th>Enero</th>
+            <td>250.00</td>
+            <td>660.50</td>
+            <td>140.50</td>
+        </tr>
+        <tr>
+            <th>February</th>
+            <td>135.55</td>
+            <td>895.20</td>
+            <td>1170.15</td>
+        </tr>
+    </table>
+    <h2>Actividad 7</h1><br><hr>
+    <table width="500" border="2" cellpadding="5" align="center" bgcolor="#FFCFB9">
+        <caption>Ejemplos de cuadros</caption>
+        <tr>
+            <td align="right" valign="middle" bgcolor="tea">Teal</td>
+            <td align="left" bgcolor="fuchsia">Fucsia</td>
+            <td colspan="2" rowspan="2" align="center" bgcolor="#DADADA">
+                <img src="OIP.jpg" width="32" height="32" border="1" align="middle">
+            </td>
+        </tr>
+        <tr>
+            <td align="right" bgcolor="yellow">Amarillo</td>
+            <td align="center" bgcolor="gray">Gris</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" align="center" bgcolor="white">
+                <img src="../x.png" width="32" height="32" border="1" align="middle">
+            </td>
+            <td aling="right" valign="baseline" bgcolor="navy">
+                <font color="white">Azul</font>
+            </td>
+            <td align="center">#FFCFB9</td>
+        </tr>
+        <tr>
+            <td width="140" align="center" bgcolor="silver">Plata</td>
+            <td height="50" align="center" valign="middle" bgcolor="aqua">AguaMarina</td>
+        </tr>
+    </table>
+</body>
+</html>
