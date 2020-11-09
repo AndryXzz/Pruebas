@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding HTML5 Video</title>
+</head>
+<body>
+    <h2>Actividad 1</h2><br>
+    <video src="../vid/puppy.mp4" poster="../img/senaSinFondo.png" width="400" height="300" preload="auto" controls loop></video>
+    <p>Un video de cachorro  jugando en la nieve</p>
+    <p>En HTML5 no es necesario proporcionar valores para todos los atributos, como los controles, reporoducción automática y atributos de bucle utilizados con el elemente &lt;video&gt;. Estos atributos son como interruptores de encendido/apagado. Si el atributo está presente, actica esa opción. si se omite el atributo, la opción está desactivada. si el navegador no admite el elemento &lt;video&gt; o el formato de video utilizado . se mostrará lo que esté entre la &lt;video&gt; de apretura y las etiquetas de &lt;&#47;video&gt; de cierre.</p>
+    <p><b>preload:</b> este articulo indica al navegador qué hacer cuando se carga la página. Puede tener uno de tres valores: <br>
+    <i>none:</i>el navegador no debe cargar el vídeo hasta que el usuario presiona play. <br>
+    <i>auto:</i>el navegador debe descargar el vídeo cuando se carga la página. <br>
+    <i>metadata:</i> el navegador debe simplemente recopilar información como el tamaño, el primer fotograma, la lista de pistas y duración.</p>
+
+    <hr>
+    <h2>Actividad 2</h2><br>
+    <video poster="../img/puppy.jpg" width="400" height="320" preload="auto" controls loop>
+        <source src="/vid/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' > <source>
+        <source src="/vid/puppy.webm" type='video/webm;codecs="vp8, vorbis "' > <source>
+    </video>
+    <p>Un video de cachorro jugando en la nieve</p>
+    <p>La etiqueta video: para especificar la ubicación del archivo que se reproducirá puede usar el elemento &lt;source&gt; dentro del elemento &lt;video&gt;. (Esto debe reemplazar el atributo src en la etiqueta &lt;video&gt; de apertura.) También puede utilizar varios elementos &lt;source&gt; para especificar que el vídeo está disponible en diferentes formatos. (Debido a un error en el iPad, debe proporcionar el video MP4 como el primer formato. De lo contrario, puede que no inicie,)</p>
+    <p><b>src:</b> este atributo especifica la ruta de acceso al vídeo.</p>
+    <p><b>type:</b> se debe utilizar este atributo para decirle al navegador qué formato es el vídeo. De lo contrario, descargará parte del video para ver si puede reproducir el archivo (que tomará tiempo y ancho de banda).</p>
+    <p><b>codecs:</b> el cídec qe se usó para codificar el vídeo se suministra dentro del atributo type.  TEnga en cuenta el uso de comillas simples, así como comillas dobles en el atributo de tipo, cuando se suministra</p>
+
+    <hr>
+    <h2>Actividad 3</h2><br>
+    <audio src="../audio/test-audio.ogg"  autoplay  controls><p>This browser does not support our audio format.</p></audio>
+    <p>&lt;audio&gt; HTML5 introdujo el elemento &lt;audio&gt; para incluir archivos de audio en sus páginas. Al igual que con el vídeo HTML5, los navegadores esperan diferentes formatos para el audio. El elemento &lt;audio&gt; tiene un número de atributos que le permiten controlar la reproducción de audio.</p>
+    <p><i>src:</i> este atributo especifica la rita de acceso al archivo de audio.</p>
+    <p><i>controls:</i> este atributo indica si el reproductor debe mostrar los controles. si no utiliza este atributo, no se mostrarán controles de forma predeterminada.</p>
+    <p><i>loop:</i> este atributo especifica que la pista de audio debe reproducirse de nuevo una vez haya finalizado</p>
+    <p></p>
+    
+    <hr>
+    <h2>Actividad 4</h2><br>
+    
+    <audio  autoplay controls>
+        <source src="../audio/test-audio.ogg">
+        <source src="../audio/test-audio.mp3">
+        <p>This browser does not support our audio format.</p>
+    </audio>
+    <p><b>src:</b> el elemnto &lt;source&gt; utiliza el atributo <i>src</i> para indicar dónde se encuentra el archivo de audio. tipo en el momento de escribir, el atributo de tipo no se usaba habitualmente en el elemento &lt;source&gt; de la misma manera que lo era par el elemento &lt;video&gt;</p>
+
+    <hr>
+    <h2>Actividad 5</h2><br>
+
+    <iframe src="https://www.youtube.com/embed/EF81Pb5IWoU" frameborder="0"></iframe>
+    <p>Youtube video ID
+    Youtube mostrará un UD (como EF81Pb5IWoU), al guardar (o reproducir) un vídeo. puede utilizar este ID y hacer referecia a su vídeo en el código HTML.</p>
+    <p><i>reproducción de un vídeo de Youtube en HTML:</i><br>
+    Para reproducir el vídeo en una página web, haga lo siguiente:
+    <ul>
+        <li>Sube el vídeo a youtube</li>
+        <li>Anote el ID del vídeo</li>
+        <li>Defina un elemento &lt;iframe&gt; en su página web</li>
+        <li>Deje que el atributo src apunto a la URL del Vídeo</li>
+        <li>Utilice los atributos width y height para especificar la dimensión del reproductor.</li>
+    </ul>
+    </p>
+
+    <hr>
+    <h2>Actividad 6 (Flash, Video and audio)</h2><br>
+
+    <video poster="../img/puppy.jpg" width="400" height="320" controls>
+        <source src="/vid/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="/vid/puppy.webm" type='video/webm;codecs="vp8, vorbis "'>
+        <div id="snow">
+            <p>you cannot see this video of a puppy playing in the snow because this browser does not support our video formats.</p>
+        </div>
+    </video>
+    <iframe src="https://www.youtube.com/embed/5cVs7HokVTo" frameborder="1" width="400" height="320"></iframe>
+</body>
+</html>
