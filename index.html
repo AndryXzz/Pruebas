@@ -1,38 +1,85 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="img/senaSinFondo.png" type="image/x-icon">
     <style>
-        html{
-            font-family: 'Courier New', Courier, monospace;
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(65deg,#3402bd,#c01e09,#11dbaf);
+            /* background-image: linear-gradient(#248f89,#4400ff); */
+            background-size: 400% 400%;
+            animation: girarFondo 30s  ease-in infinite;
         }
         #tabla{
-            border-color: #6129a1;
-            margin: 5px 10%;
-
+            text-align: center;
+            left: 50px;
+            width:100%;
+            padding: 0px 10%;
+            margin-top: 50px;
         }
+        #tabla td{border: 1px solid #000000; padding: 10px;}
+
+        #tabla td:nth-child(2){transition: all .5s ease;}
+        #tabla td a{transition: all .2s ease;}
+
+        #tabla td:nth-child(2):hover{background-color: #0e1892bd; font-size: 20px;}
+
+        #tabla td a{
+            background: #0e1892bd;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            text-decoration: unset;
+        }
+
+        #tabla td a:hover{color: black;cursor: pointer;background: #ffffffd6;}
+
+        #tabla thead tr th:nth-child(2){border: 1px solid #ffffff; border-bottom: unset; border-top:unset}
         #tabla thead{
-            background-color: black;
-            color: white;
+            background-color: #00000085;
+            color: white;            
+        }
+        #tabla thead th{padding: 20px;}
+        #tabla thead th:first-child{border-top-left-radius: 5px;}
+        #tabla thead th:last-child{border-top-right-radius: 5px;}
+
+        #tabla tbody{
+            background-color: #ffffffab;
+        }
+        @keyframes girarFondo {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+        }
+        .modal{
+            background-color: #00000040;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <table id="tabla" border="1" cellpadding="5" cellspacing="2.5">
+    <div class="modal"></div>
+    <table id="tabla" cellpadding="5" cellspacing="0">
         <thead>
             <tr>
                 <th>Nombre Actividad</th>
-                <th>Enlace Actividad</th>
+                <th>Ir a la Actividad</th>
                 <th>Desarrollo de Actividades</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>cristian</td>
+                <td><a href="actividades/act1.html">act1</a></td>
+                <td>b</td>
             </tr>
             <tr>
                 <td></td>
@@ -81,5 +128,6 @@
             </tr>
         </tbody>
     </table>
+
 </body>
 </html>
