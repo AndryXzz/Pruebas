@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CS8 Selectors</title>
+    <style type="text/css">
+        body{ font-family: Tahoma;}
+        th {text-transform: uppercase; color: #836FB3;}
+        p {padding: 5px; line-height: 1em;} 
+        a {color: #FF6666;}
+    </style>
+</head>
+
+
+<body>
+    <h1>CSS Selectors</h1>
+    <p>Hay muchos tipos diferentes de selector CSS que le pemlten orientar las reglas a elementos específicos en un documento HTML.</p>
+    <p>Los selectores CSS distinguen entre mayúsculas y minúsculas, por lo que deben coincidir exactamente con los nombres de elemento y los valores de atributo.</p>
+    <table border="3">
+        <caption="top">Tipos de Selectores</caption>
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>Significado</ch>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Universal Selector</th>
+                <td>Se aplica a todos los elementos del documento</td>
+                <td><a>* {}</a> Se dirige a todos los elementos de la página</td>
+            </tr>
+            <tr>
+                <th>Type selector</th>
+                <td>Coincide con los nombres de elemento</td>
+                <td><a>hl, h2, h3 {}</a> corresponde a los elementos &lt;h1&gt;,&lt;h2&gt; y &lt;h3&gt;
+                </td>
+            </tr>
+            <tr>
+                <th>Class Selector</th>
+                <td>Coincide con un elemento cuyo atributo do clase tiene un valor que corresponda con el especificado después del símbolo de punto "."</td>
+                <td><a>. nota {}</a> se dirige a cualquier elemento cuyo atributo de clase tenga un valor de nota</td>
+            </tr>
+            <tr>
+                
+                <th>Id Selector</th>
+                <td>Coincide con un elemento cuyo ID atributo tiene
+                    un valor que corresponda con el especificado daspués del símbolo da hash "#"</td>
+                <td><a>#introduction {}</a> se dirige al elemento cuyo atributo ID tiene un valor de
+                    introduotion</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
