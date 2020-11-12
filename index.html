@@ -8,7 +8,8 @@
     <style>
         body{
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-image: linear-gradient(65deg,#3402bd,#c01e09,#11dbaf);
+            background-image: linear-gradient(65deg,#3402bd,#11dbaf,#b33221);
+            /* background-image: linear-gradient(65deg,#3402bd,#c01e09,#11dbaf); */
             /* background-image: linear-gradient(#248f89,#4400ff); */
             background-size: 400% 400%;
             animation: girarFondo 30s  ease-in infinite;
@@ -52,6 +53,26 @@
         #tabla tbody{
             background-color: #ffffffab;
         }
+        div.scroll{
+            overflow: scroll;
+            max-height: 610px;
+            overflow-x: unset;
+            scroll-behavior: smooth;
+        }
+        div.scroll::-webkit-scrollbar{
+            scroll-behavior: smooth;
+        }
+        div.scroll::-webkit-scrollbar-button{
+            display: none;
+        }
+        div.scroll::-webkit-scrollbar-thumb{
+            background-color: #000000a9;
+            border-radius: 5px;
+        }
+        div.scroll::-webkit-scrollbar-track{
+            background-color: #ffffff38;
+            border-radius: 5px;
+        }
         @keyframes girarFondo {
         0%{background-position:0% 50%}
         50%{background-position:100% 50%}
@@ -71,216 +92,217 @@
 </head>
 <body>
     <div class="modal"></div>
-    <table id="tabla" cellpadding="5" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Nombre Actividad</th>
-                <th>Ir a la Actividad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="2"><strong>Etiquetas iniciales HTML</strong></td>
-            </tr>
-            <tr>
-                <td>Títulos y Párrafos</td>
-                <td><a href="actividades/act1.html">Actividad 1</a></td>
-            </tr>
-            <tr>
-                <td>bold,Italic,Superscript and Subscript,Horizontal Rules</td>
-                <td><a href="actividades/act2.html">Actividad 2</a></td>
-            </tr>
-            <tr>
-                <td>strong,emphasis,Address,Insert and Delete,StrikeTrhough</td>
-                <td><a href="actividades/act3.html">Actividad 3</a></td>
-            </tr>
-            <tr>
-                <td>Receta de huevos revueltos</td>
-                <td><a href="actividades/act4.html">Actividad 4</a></td>
-            </tr>
-            <tr>
-                <td>Ferias Nacionales de Colombia</td>
-                <td><a href="actividades/act5.html">Actividad 5</a></td>
-            </tr>
-            <tr>
-                <td><strong>Personalizada</strong></td>
-                <td><a href="personal1.html">Personal 1</a></td>
-            </tr>
-            <tr>
-                <td colspan="2"><strong>Imágenes</strong></td>
-            </tr>
-            <tr>
-                <td>Imágen</td>
-                <td><a href="actividades/act6/act6.1.html">Actividad 1</a></td>
-            </tr>
-            <tr>
-                <td>Imágen Cambiando el tamaño</td>
-                <td><a href="actividades/act6/act6.2.html">Actividad 2</a></td>
-            </tr>
-            <tr>
-                <td>Imágen con figcaption</td>
-                <td><a href="actividades/act6/act6.3.html">Actividad 3</a></td>
-            </tr>
-            <tr>
-                <td>Posicionamiento de imágenes</td>
-                <td><a href="actividades/act6/act6.4.html">Actividad 4</a></td>
-            </tr>
-            <tr>
-                <td>Imágenes con align</td>
-                <td><a href="actividades/act6/act6.5.html">Actividad 5</a></td>
-            </tr>
-            <tr>
-                <td>Align top, middle y bottom</td>
-                <td><a href="actividades/act6/act6.6.html">Actividad 6</a></td>
-            </tr>
-            <tr>
-                <td>Ejemplo</td>
-                <td><a href="actividades/act6/act6.7.html">Actividad 7</a></td>
-            </tr>
-            <tr>
-                <td><strong>Perzonalizada</strong></td>
-                <td><a href="actividades/act6/act6.6Personalizada.html">Actividad Personalizada</a></td>
-            </tr>
-            <tr>
-                <td colspan="2">Formularios</td>
-            </tr>
-            <tr>
-                <td>Ingreso de datos</td>
-                <td><a href="actividades/act7/act7.1.html">Actividad 1</td>
-            </tr>
-            <tr>
-                <td>Cómo hacer un formulario</td>
-                <td><a href="actividades/act7/act7.2.html">Actividad 2</a></td>
-            </tr>
-            <tr>
-                <td>Tipos de Input</td>
-                <td><a href="actividades/act7/act7.3-15.html">Actividad del <strong>3 al 15</strong></a></td>
-            </tr>
-            <tr>
-                <td colspan="2">Tablas</td>
-            </tr>
-            <tr>
-                <td>Ejemplos de tablas</td>
-                <td><a href="actividades/act8.html">actividades de tablas</a></td>
-            </tr>
-            <tr>
-                <td colspan="2">Tipos de atributos para las tags y mapas</td>
-            </tr>
-            <tr>
-                <td>el ID</td>
-                <td><a href="actividades/act9/act9.1.html">Actividad 1</a></td>
-            </tr>
-            <tr>
-                <td>Clases</td>
-                <td><a href="actividades/act9/act9.2.html">Actividad 2</a></td>
-            </tr>
-            <tr>
-                <td>Ejemplos con ID</td>
-                <td><a href="actividades/act9/act9.3.html">Actividad 3</a></td>
-            </tr>
-            <tr>
-                <td>Mapas con Iframe</td>
-                <td><a href="actividades/act9/act9.4.html">Actividad 4</a></td>
-            </tr>
-            <tr>
-                <td>Metadatos</td>
-                <td><a href="actividades/act9/act9.5.html">Actividad 5</a></td>
-            </tr>
-            <tr>
-                <td>Información de un colegio</td>
-                <td><a href="actividades/act9/act9.6.html">Actividad 6</a></td>
-            </tr>
-            <tr>
-                <td>Mapa de dónde vivo</td>
-                <td><a href="actividades/act9/act9.6personal.html">Bosa</a></td>
-            </tr>
-            <tr>
-                <td>El Gran Salón</td>
-                <td><a href="actividades/act9/greatHall.html">Menú</a></td>
-            </tr>
-            <tr>
-                <td colspan="2">Archivos Multimedia</td>
-            </tr>
-            <tr>
-                <td>Videos locales, de YouTube y audios</td>
-                <td><a href="actividades/act10.html">Actividades de la 1 a la 6</a></td>
-            </tr>
-            <tr>
-                <td colspan="2">CSS</td>
-            </tr>
-            <tr>
-                <td>Cuadros</td>
-                <td><a href="actividades/act11/act11.1.html">Actividad 11.1</a></td>
-            </tr>
-            <tr>
-                <td>Jardín Cottage</td>
-                <td><a href="actividades/act11/act11.2.html">Actividad 11.2</a></td>
-            </tr>
-            <tr>
-                <td>Jardín Cottage con marcos</td>
-                <td><a href="actividades/act11/act11.3.html">Actividad 11.3</a></td>
-            </tr>
-            <tr>
-                <td>elemento &lt;style&gt;</td>
-                <td><a href="actividades/act11/act11.4.html">Actividad 11.4</a></td>
-            </tr>
-            <tr>
-                <td>Selectores de CSS</td>
-                <td><a href="actividades/act11/act11.5.html">Actividad 11.5</a></td>
-            </tr>
-            <tr>
-                <td>Prioridad de selectores</td>
-                <td><a href="actividades/act11/act11.6.html">Actividad 11.6</a></td>
-            </tr>
-            <tr>
-                <td>Ejemplo de prioridad</td>
-                <td><a href="actividades/act11/act11.7.html">Actividad 11.7</a></td>
-            </tr>
-            <tr>
-                <td>Potatoes</td>
-                <td><a href="actividades/act11/act11.8.html">Actividad 11.8</a></td>
-            </tr>
-            <tr>
-                <td>Propiedad Color</td>
-                <td><a href="actividades/act12/act11.1.html">Actividad 12.1</a></td>
-            </tr>
-            <tr>
-                <td>background-color</td>
-                <td><a href="actividades/act12/act11.2.html">Actividad 12.2</a></td>
-            </tr>
-            <tr>
-                <td>Entendiendo el color 1</td>
-                <td><a href="actividades/act12/act11.3.html">Actividad 12.3</a></td>
-            </tr>
-            <tr>
-                <td>Entendiendo el color 2</td>
-                <td><a href="actividades/act12/act11.4.html">Actividad 12.4</a></td>
-            </tr>
-            <tr>
-                <td>Entendiendo el color 3</td>
-                <td><a href="actividades/act12/act11.5.html">Actividad 12.5</a></td>
-            </tr>
-            <tr>
-                <td>Propiedad Opacity</td>
-                <td><a href="actividades/act12/act11.6.html">Actividad 12.6</a></td>
-            </tr>
-            <tr>
-                <td>HSL & HSLA</td>
-                <td><a href="actividades/act12/act11.7.html">Actividad 12.7</a></td>
-            </tr>
-            <tr>
-                <td>Ejemplo CSS</td>
-                <td><a href="actividades/act12/act11.8.html">Actividad 12.8</a></td>
-            </tr>
-            <tr>
-                <td colspan="2">Demás</td>
-            </tr>
-            <tr>
-                <td>Experimentos de CSS</td>
-                <td><a href="personalizada.html">CSS</a></td>
-            </tr>
-        </tbody>
-    </table>
-
+    <div class="scroll">
+        <table id="tabla" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nombre Actividad</th>
+                    <th>Ir a la Actividad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"><strong>Etiquetas iniciales HTML</strong></td>
+                </tr>
+                <tr>
+                    <td>Títulos y Párrafos</td>
+                    <td><a href="actividades/act1.html">Actividad 1</a></td>
+                </tr>
+                <tr>
+                    <td>bold,Italic,Superscript and Subscript,Horizontal Rules</td>
+                    <td><a href="actividades/act2.html">Actividad 2</a></td>
+                </tr>
+                <tr>
+                    <td>strong,emphasis,Address,Insert and Delete,StrikeTrhough</td>
+                    <td><a href="actividades/act3.html">Actividad 3</a></td>
+                </tr>
+                <tr>
+                    <td>Receta de huevos revueltos</td>
+                    <td><a href="actividades/act4.html">Actividad 4</a></td>
+                </tr>
+                <tr>
+                    <td>Ferias Nacionales de Colombia</td>
+                    <td><a href="actividades/act5.html">Actividad 5</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Personalizada</strong></td>
+                    <td><a href="personal1.html">Personal 1</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>Imágenes</strong></td>
+                </tr>
+                <tr>
+                    <td>Imágen</td>
+                    <td><a href="actividades/act6/act6.1.html">Actividad 1</a></td>
+                </tr>
+                <tr>
+                    <td>Imágen Cambiando el tamaño</td>
+                    <td><a href="actividades/act6/act6.2.html">Actividad 2</a></td>
+                </tr>
+                <tr>
+                    <td>Imágen con figcaption</td>
+                    <td><a href="actividades/act6/act6.3.html">Actividad 3</a></td>
+                </tr>
+                <tr>
+                    <td>Posicionamiento de imágenes</td>
+                    <td><a href="actividades/act6/act6.4.html">Actividad 4</a></td>
+                </tr>
+                <tr>
+                    <td>Imágenes con align</td>
+                    <td><a href="actividades/act6/act6.5.html">Actividad 5</a></td>
+                </tr>
+                <tr>
+                    <td>Align top, middle y bottom</td>
+                    <td><a href="actividades/act6/act6.6.html">Actividad 6</a></td>
+                </tr>
+                <tr>
+                    <td>Ejemplo</td>
+                    <td><a href="actividades/act6/act6.7.html">Actividad 7</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Perzonalizada</strong></td>
+                    <td><a href="actividades/act6/act6.6Personalizada.html">Actividad Personalizada</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Formularios</td>
+                </tr>
+                <tr>
+                    <td>Ingreso de datos</td>
+                    <td><a href="actividades/act7/act7.1.html">Actividad 1</td>
+                </tr>
+                <tr>
+                    <td>Cómo hacer un formulario</td>
+                    <td><a href="actividades/act7/act7.2.html">Actividad 2</a></td>
+                </tr>
+                <tr>
+                    <td>Tipos de Input</td>
+                    <td><a href="actividades/act7/act7.3-15.html">Actividad del <strong>3 al 15</strong></a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tablas</td>
+                </tr>
+                <tr>
+                    <td>Ejemplos de tablas</td>
+                    <td><a href="actividades/act8.html">actividades de tablas</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tipos de atributos para las tags y mapas</td>
+                </tr>
+                <tr>
+                    <td>el ID</td>
+                    <td><a href="actividades/act9/act9.1.html">Actividad 1</a></td>
+                </tr>
+                <tr>
+                    <td>Clases</td>
+                    <td><a href="actividades/act9/act9.2.html">Actividad 2</a></td>
+                </tr>
+                <tr>
+                    <td>Ejemplos con ID</td>
+                    <td><a href="actividades/act9/act9.3.html">Actividad 3</a></td>
+                </tr>
+                <tr>
+                    <td>Mapas con Iframe</td>
+                    <td><a href="actividades/act9/act9.4.html">Actividad 4</a></td>
+                </tr>
+                <tr>
+                    <td>Metadatos</td>
+                    <td><a href="actividades/act9/act9.5.html">Actividad 5</a></td>
+                </tr>
+                <tr>
+                    <td>Información de un colegio</td>
+                    <td><a href="actividades/act9/act9.6.html">Actividad 6</a></td>
+                </tr>
+                <tr>
+                    <td>Mapa de dónde vivo</td>
+                    <td><a href="actividades/act9/act9.6personal.html">Bosa</a></td>
+                </tr>
+                <tr>
+                    <td>El Gran Salón</td>
+                    <td><a href="actividades/act9/greatHall.html">Menú</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Archivos Multimedia</td>
+                </tr>
+                <tr>
+                    <td>Videos locales, de YouTube y audios</td>
+                    <td><a href="actividades/act10.html">Actividades de la 1 a la 6</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">CSS</td>
+                </tr>
+                <tr>
+                    <td>Cuadros</td>
+                    <td><a href="actividades/act11/act11.1.html">Actividad 11.1</a></td>
+                </tr>
+                <tr>
+                    <td>Jardín Cottage</td>
+                    <td><a href="actividades/act11/act11.2.html">Actividad 11.2</a></td>
+                </tr>
+                <tr>
+                    <td>Jardín Cottage con marcos</td>
+                    <td><a href="actividades/act11/act11.3.html">Actividad 11.3</a></td>
+                </tr>
+                <tr>
+                    <td>elemento &lt;style&gt;</td>
+                    <td><a href="actividades/act11/act11.4.html">Actividad 11.4</a></td>
+                </tr>
+                <tr>
+                    <td>Selectores de CSS</td>
+                    <td><a href="actividades/act11/act11.5.html">Actividad 11.5</a></td>
+                </tr>
+                <tr>
+                    <td>Prioridad de selectores</td>
+                    <td><a href="actividades/act11/act11.6.html">Actividad 11.6</a></td>
+                </tr>
+                <tr>
+                    <td>Ejemplo de prioridad</td>
+                    <td><a href="actividades/act11/act11.7.html">Actividad 11.7</a></td>
+                </tr>
+                <tr>
+                    <td>Potatoes</td>
+                    <td><a href="actividades/act11/act11.8.html">Actividad 11.8</a></td>
+                </tr>
+                <tr>
+                    <td>Propiedad Color</td>
+                    <td><a href="actividades/act12/act11.1.html">Actividad 12.1</a></td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td><a href="actividades/act12/act11.2.html">Actividad 12.2</a></td>
+                </tr>
+                <tr>
+                    <td>Entendiendo el color 1</td>
+                    <td><a href="actividades/act12/act11.3.html">Actividad 12.3</a></td>
+                </tr>
+                <tr>
+                    <td>Entendiendo el color 2</td>
+                    <td><a href="actividades/act12/act11.4.html">Actividad 12.4</a></td>
+                </tr>
+                <tr>
+                    <td>Entendiendo el color 3</td>
+                    <td><a href="actividades/act12/act11.5.html">Actividad 12.5</a></td>
+                </tr>
+                <tr>
+                    <td>Propiedad Opacity</td>
+                    <td><a href="actividades/act12/act11.6.html">Actividad 12.6</a></td>
+                </tr>
+                <tr>
+                    <td>HSL & HSLA</td>
+                    <td><a href="actividades/act12/act11.7.html">Actividad 12.7</a></td>
+                </tr>
+                <tr>
+                    <td>Ejemplo CSS</td>
+                    <td><a href="actividades/act12/act11.8.html">Actividad 12.8</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Demás</td>
+                </tr>
+                <tr>
+                    <td>Experimentos de CSS</td>
+                    <td><a href="personalizada.html">CSS</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
