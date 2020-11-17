@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliografía</title>
     <link rel="shortcut icon" href="img/senaSinFondo.png" type="image/x-icon">
     <style>
-        body{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-image: linear-gradient(65deg,#3402bd,#11dbaf,#b33221);
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(65deg, #3402bd, #11dbaf, #b33221);
             background-size: 400% 400%;
-            animation: girarFondo 30s  ease-in infinite;
+            animation: girarFondo 30s ease-in infinite;
         }
-        #tabla{
+
+        #tabla {
             text-align: center;
             left: 50px;
-            width:100%;
+            width: 100%;
             padding: 0px 10%;
             margin: 50px 0px;
         }
-        #tabla td{border: 1px solid #000000; padding: 20px;}
 
-        #tabla td:nth-child(2){transition: all .5s ease;}
-        #tabla td a{transition: all .2s ease;}
+        #tabla td {
+            border: 1px solid #000000;
+            padding: 20px;
+        }
 
-        #tabla td:nth-child(2):hover{background-color: #0e1892bd; font-size: 20px;}
+        #tabla td:nth-child(2) {
+            transition: all .5s ease;
+        }
 
-        #tabla td a{
+        #tabla td a {
+            transition: all .2s ease;
+        }
+
+        #tabla td:nth-child(2):hover {
+            background-color: #0e1892bd;
+            font-size: 20px;
+        }
+
+        #tabla td a {
             background: #0e1892bd;
             color: #fff;
             padding: 5px;
@@ -36,47 +50,82 @@
             box-shadow: 6px 5px 8px #000000ab;
         }
 
-        #tabla td a:hover{color: black;cursor: pointer;background: #ffffffd6;box-shadow: 6px 5px 8px #ecececab;}
-
-        #tabla thead tr th:nth-child(2){border-left: 1px solid #ffffff;}
-        #tabla thead{
-            background-color: #00000085;
-            color: white;            
+        #tabla td a:hover {
+            color: black;
+            cursor: pointer;
+            background: #ffffffd6;
+            box-shadow: 6px 5px 8px #ecececab;
         }
-        #tabla thead th{padding: 20px;}
-        #tabla thead th:first-child{border-top-left-radius: 5px;}
-        #tabla thead th:last-child{border-top-right-radius: 5px;}
 
-        #tabla tbody tr td:first-child{max-width: 150px;}
-        #tabla tbody{
+        #tabla thead tr th:nth-child(2) {
+            border-left: 1px solid #ffffff;
+        }
+
+        #tabla thead {
+            background-color: #00000085;
+            color: white;
+        }
+
+        #tabla thead th {
+            padding: 20px;
+        }
+
+        #tabla thead th:first-child {
+            border-top-left-radius: 5px;
+        }
+
+        #tabla thead th:last-child {
+            border-top-right-radius: 5px;
+        }
+
+        #tabla tbody tr td:first-child {
+            max-width: 150px;
+        }
+
+        #tabla tbody {
             background-color: #ffffffab;
         }
-        div.scroll{
+
+        div.scroll {
             overflow: scroll;
             max-height: 610px;
             overflow-x: unset;
             scroll-behavior: smooth;
         }
-        div.scroll::-webkit-scrollbar{
+
+        div.scroll::-webkit-scrollbar {
             scroll-behavior: smooth;
         }
-        div.scroll::-webkit-scrollbar-button{
+
+        div.scroll::-webkit-scrollbar-button {
             display: none;
         }
-        div.scroll::-webkit-scrollbar-thumb{
+
+        div.scroll::-webkit-scrollbar-thumb {
             background-color: #000000a9;
             border-radius: 5px;
         }
-        div.scroll::-webkit-scrollbar-track{
+
+        div.scroll::-webkit-scrollbar-track {
             background-color: #ffffff38;
             border-radius: 5px;
         }
+
         @keyframes girarFondo {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
         }
-        .modal::after{
+
+        .modal::after {
             background-color: #00000040;
             position: absolute;
             width: 100%;
@@ -85,9 +134,14 @@
             z-index: -1;
             height: 100%;
         }
-        td[colspan="2"]{background-color: #f7f7f7;}
+
+        td[colspan="2"] {
+            background-color: #f7f7f7;
+        }
     </style>
+    <!-- <script src="x.js"></script> -->
 </head>
+
 <body>
     <div class="modal"></div>
     <div class="scroll">
@@ -293,6 +347,169 @@
                     <td><a href="actividades/act12/act11.8.html">Actividad 12.8</a></td>
                 </tr>
                 <tr>
+                    <td colspan="2">Más CSS</td>
+                </tr>
+                <tr>
+                    <td>Font Family</td>
+                    <td><a href="actividades/act13/act1.html">Actividad 13.1</a></td>
+                </tr>
+                <tr>
+                    <td>Font Size</td>
+                    <td><a href="actividades/act13/act2.html">Actividad 13.2</a></td>
+                </tr>
+                <tr>
+                    <td>Font Face</td>
+                    <td><a href="actividades/act13/act3.html">Actividad 13.3</a></td>
+                </tr>
+                <tr>
+                    <td>Font Properties</td>
+                    <td><a href="actividades/act13/act4.html">Actividad 13.4</a></td>
+                </tr>
+                <tr>
+                    <td>Text Transform</td>
+                    <td><a href="actividades/act13/act5.html">Actividad 13.5</a></td>
+                </tr>
+                <tr>
+                    <td>Text Decoration</td>
+                    <td><a href="actividades/act13/act6.html">Actividad 13.6</a></td>
+                </tr>
+                <tr>
+                    <td>Line Height</td>
+                    <td><a href="actividades/act13/act7.html">Actividad 13.7</a></td>
+                </tr>
+                <tr>
+                    <td>Letter and Word Spacing</td>
+                    <td><a href="actividades/act13/act8.html">Actividad 13.8</a></td>
+                </tr>
+                <tr>
+                    <td>Text Align</td>
+                    <td><a href="actividades/act13/act9.html">Actividad 13.9</a></td>
+                </tr>
+                <tr>
+                    <td>Vertical Align</td>
+                    <td><a href="actividades/act13/act10.html">Actividad 13.10</a></td>
+                </tr>
+                <tr>
+                    <td>Text Indent</td>
+                    <td><a href="actividades/act13/act11.html">Actividad 13.11</a></td>
+                </tr>
+                <tr>
+                    <td>Text Shadow</td>
+                    <td><a href="actividades/act13/act12.html">Actividad 13.12</a></td>
+                </tr>
+                <tr>
+                    <td>Hover Active Focus</td>
+                    <td><a href="actividades/act13/act13.html">Actividad 13.13</a></td>
+                </tr>
+                <tr>
+                    <td>Link Visited</td>
+                    <td><a href="actividades/act13/act14.html">Actividad 13.14</a></td>
+                </tr>
+                <tr>
+                    <td>Text Properties</td>
+                    <td><a href="actividades/act13/act15.html">Actividad 13.15</a></td>
+                </tr>
+                <tr>
+                    <td>Width Height</td>
+                    <td><a href="actividades/act14/act1.html">Actividad 14.1</a></td>
+                </tr>
+                <tr>
+                    <td>Min Width Max Width</td>
+                    <td><a href="actividades/act14/act2.html">Actividad 14.2</a></td>
+                </tr>
+                <tr>
+                    <td>Min Height Max Height</td>
+                    <td><a href="actividades/act14/act3.html">Actividad 14.3</a></td>
+                </tr>
+                <tr>
+                    <td>Overflow</td>
+                    <td><a href="actividades/act14/act4.html">Actividad 14.4</a></td>
+                </tr>
+                <tr>
+                    <td>Border, Margin & Padding</td>
+                    <td><a href="actividades/act14/act5.html">Actividad 14.5</a></td>
+                </tr>
+                <tr>
+                    <td>Border Style - Border color</td>
+                    <td><a href="actividades/act14/act6.html">Actividad 14.6</a></td>
+                </tr>
+                <tr>
+                    <td>Border Width - Display - Visibility</td>
+                    <td><a href="actividades/act14/act7.html">Actividad 14.7</a></td>
+                </tr>
+                <tr>
+                    <td>Padding - Margin Centering Content</td>
+                    <td><a href="actividades/act14/act8.html">Actividad 14.8</a></td>
+                </tr>
+                <tr>
+                    <td>Border Image</td>
+                    <td><a href="actividades/act14/act9.html">Actividad 14.9</a></td>
+                </tr>
+                <tr>
+                    <td>Box Shadow</td>
+                    <td><a href="actividades/act14/act10.html">Actividad 14.10</a></td>
+                </tr>
+                <tr>
+                    <td>Border Radius - Elliptical Shapes</td>
+                    <td><a href="actividades/act14/1act1.html">Actividad 14.11</a></td>
+                </tr>
+                <tr>
+                    <td>Boxes</td>
+                    <td><a href="actividades/act14/act12.html">Actividad 14.12</a></td>
+                </tr>
+                <tr>
+                    <td>List Style Type</td>
+                    <td><a href="actividades/act15/act1.html">Actividad 15.1</a></td>
+                </tr>
+                <tr>
+                    <td>List Style Image</td>
+                    <td><a href="actividades/act15/act2.html">Actividad 15.2</a></td>
+                </tr>
+                <tr>
+                    <td>List Style Position</td>
+                    <td><a href="actividades/act15/act3.html">Actividad 15.3</a></td>
+                </tr>
+                <tr>
+                    <td>List Style</td>
+                    <td><a href="actividades/act15/act4.html">Actividad 15.4</a></td>
+                </tr>
+                <tr>
+                    <td>Table Properties</td>
+                    <td><a href="actividades/act15/act5.html">Actividad 15.5</a></td>
+                </tr>
+                <tr>
+                    <td>Empty Cells - Gaps Between Cells</td>
+                    <td><a href="actividades/act15/act6.html">Actividad 15.6</a></td>
+                </tr>
+                <tr>
+                    <td>Styling Text Inputs</td>
+                    <td><a href="actividades/act15/act7.html">Actividad 15.7</a></td>
+                </tr>
+                <tr>
+                    <td>Styling Submit Buttons</td>
+                    <td><a href="actividades/act15/act8.html">Actividad 15.8</a></td>
+                </tr>
+                <tr>
+                    <td>Styling Fieldsets and Legends</td>
+                    <td><a href="actividades/act15/act9.html">Actividad 15.9</a></td>
+                </tr>
+                <tr>
+                    <td>Aligning Form Controls - Problem</td>
+                    <td><a href="actividades/act15/act10.html">Actividad 15.10</a></td>
+                </tr>
+                <tr>
+                    <td>Aligning Form Controls - Solution</td>
+                    <td><a href="actividades/act15/act11.html">Actividad 15.11</a></td>
+                </tr>
+                <tr>
+                    <td>Cursor</td>
+                    <td><a href="actividades/act15/act12.html">Actividad 15.12</a></td>
+                </tr>
+                <tr>
+                    <td>Lists, Tables and Forms</td>
+                    <td><a href="actividades/act15/act13.html">Actividad 15.13</a></td>
+                </tr>
+                <tr>
                     <td colspan="2">Demás</td>
                 </tr>
                 <tr>
@@ -303,4 +520,5 @@
         </table>
     </div>
 </body>
+
 </html>
