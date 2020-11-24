@@ -138,12 +138,34 @@
         td[colspan="2"] {
             background-color: #f7f7f7;
         }
+
+        .img {
+            opacity: 0.7;
+            position: absolute;
+            z-index: -1;
+            transition: all .5s ease;
+            animation: mover 5s ease infinite;
+        }
+
+        @keyframes mover {
+            50% {
+                bottom: 1px
+            }
+
+            100% {
+                right: 1px;
+            }
+        }
     </style>
     <!-- <script src="x.js"></script> -->
 </head>
 
 <body>
+    <audio src="audio/Minecraft.mp3" autoplay></audio>
     <div class="modal"></div>
+    <div class="img">
+        <img src="../../img/dawae.gif" alt="" srcset="">
+    </div>
     <div class="scroll">
         <table id="tabla" cellpadding="5" cellspacing="0">
             <thead>
