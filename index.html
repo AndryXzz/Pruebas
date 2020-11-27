@@ -1,3 +1,4 @@
+g dawa
 <!DOCTYPE html>
 <html lang="en">
 
@@ -144,16 +145,28 @@
             position: absolute;
             z-index: -1;
             transition: all .5s ease;
-            animation: mover 5s ease infinite;
+            animation: mover 10s ease infinite;
         }
 
         @keyframes mover {
+
+
+            25% {
+                margin-top: 30%;
+            }
+
             50% {
-                bottom: 1px
+                margin-top: 0%;
+                margin-left: 50%;
+            }
+
+            75% {
+                margin-bottom: 50%;
             }
 
             100% {
-                right: 1px;
+                margin-left: 0%;
+                margin-right: 50%;
             }
         }
     </style>
@@ -162,11 +175,14 @@
 
 <body>
     <audio src="audio/Minecraft.mp3" autoplay></audio>
-    <div class="modal"></div>
-    <div class="img">
-        <img src="../../img/dawae.gif" alt="" srcset="">
+    <div class="modal">
+
     </div>
+
     <div class="scroll">
+        <div class="img" id="tocamexd">
+            <img src="img/dawae.gif">
+        </div>
         <table id="tabla" cellpadding="5" cellspacing="0">
             <thead>
                 <tr>
@@ -590,6 +606,11 @@
             </tbody>
         </table>
     </div>
+    <script>
+        document.getElementById("tocamexd").addEventListener("click", function () {
+            alert("xd");
+        });
+    </script>
 </body>
 
 </html>
