@@ -125,13 +125,15 @@
             }
         }
 
-        .modal::after {
+        .modal {
+            /* background-color: red; */
             background-color: #00000040;
+            display: none;
             position: absolute;
             width: 100%;
             top: 0px;
             left: 0px;
-            z-index: -1;
+            z-index: 1;
             height: 100%;
         }
 
@@ -168,19 +170,398 @@
                 margin-right: 50%;
             }
         }
+
+        .btn,
+        .contAct input[type=button] {
+            background-color: #f7f7f7;
+            border: unset;
+            padding: 12px;
+            font-size: 16px;
+            box-shadow: 2px 4px 9px 1px;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .btn:hover,
+        .contAct input[type=button]:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .modalContent {
+            background-color: white;
+            margin: auto;
+            margin-top: 3em;
+            text-align: center;
+            padding: 1.5%;
+            max-width: 50%;
+            word-break: break-all;
+            overflow: auto;
+            height: 30em;
+        }
+
+        .contAct {
+            padding: 10px;
+        }
     </style>
-    <!-- <script src="x.js"></script> -->
+    <script src="x.js"></script>
 </head>
 
 <body>
     <audio src="audio/Minecraft.mp3" autoplay></audio>
     <div class="modal">
 
+        <div id='modal'>
+            <div class="modalContent">
+                <h2>Actividades</h2>
+                <div class="contAct">
+                    <input type="button" value="Actividad 1" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 2" class="btnAct">
+                    <p>Parrafo ejercicion 2 primera linea</p>
+                    <p id="act2"></p>
+                    <p>Parrafo ejercicion 2 última linea</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 3" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 4" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 5" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 6" class="btnAct">
+                    <p>Parrafo Ejercicio 006</p>
+                    <p> a = 33 <br />
+                        b = 10 <br />
+                        c = test <br />
+                        a + b = 43 <br />
+                        a - b = 23 <br />
+                        a / b = 3.3 <br />
+                        a % b = 3 <br />
+                        a + b + c = 43Test <br />
+                        ++a = 35 <br />
+                        --b = 8 <br /></p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 7" class="btnAct">
+                    <p>Parrafo Ejercicio 007</p>
+                    <p>a = 10; <br>
+                        b = 20; <br>
+                        (a == b) => false <br />
+                        ( a < b)=> true <br />
+                            ( a > b) => false <br />
+                            ( a != b) => true <br />
+                            ( a >= b) => false <br />
+                            ( a <= b)=> false <br /></p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 8" class="btnAct">
+                    <p>Parrafo Ejercicio 008</p>
+                    <p> a = true <br />
+                        b = false <br />
+                        (a && b) => false <br />
+                        (a || b) => true <br />
+                        ! ( a && b) => true <br /></p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 9" class="btnAct">
+                    <p>Parrafo Ejercicio 009</p>
+                    <p> a = 33; <br />
+                        b = 10; <br />
+                        value of a => (a = b) => 10 <br /> C= A + B will assing the value of A + B into C <br />
+                        value of a => (a += b) => 20 <br /> C += A is equivalent to C = C + A <br />
+                        value of a => (a -= b) => 10 <br /> C -= A is equivalent to C = C - A <br />
+                        value of a => (a *= b) => 100 <br /> C *= A is equivalent to C = C * A <br />
+                        value of a => (a /= b) => 10 <br /> C /= A is equivalent to C = C / A <br />
+                        value of a => (a %= b) => 0 <br /> C %= A is equivalent to C = C % A <br /></p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 10" class="btnAct">
+                    <p>Parrafo Ejercicio 010</p>
+                    <p> ( (a > b) ? 100: 200) => 200 <br />
+                        ((a < b) ? 100: 200)=> 100 <br /> </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 11" class="btnAct">
+                    <p>Parrafo Ejercicio 011</p>
+                    <p>el valor del area es: 47.599999999999994 <br />
+                        el valor del perimetro es: 28.2 <br /> </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 12" class="btnAct">
+                    <p>Parrafo Ejercicio 012</p>
+                    <p>El area del Circulo es: 176.71458676442586 <br />
+                        El perimetro del Circulo es: 47.12388980384589 <br /> </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 13" class="btnAct">
+                    <p>Parrafo Ejercicio 013</p>
+                    <p>123.456 <br />
+                        123 <br />
+                        NaN <br />
+                        43981 <br />
+                        e <br />
+                        10010 <br />
+                        NaN <br />
+                        Infinity
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 14" class="btnAct">
+                    <p>Parrafo Ejercicio 014</p>
+                    <p>1020 <br />
+                        -10 <br />
+                        200 <br />
+                        0.5 <br />
+                        10 <br /></p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 15" class="btnAct">
+                    <p>Parrafo Ejercicio 015</p>
+                    <p>
+                        potencia: 100000000000000000000 <br />
+                    </p>
+                </div>
+
+                <!-- <div class="contAct">
+                    <input type="button" value="Actividad 16" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 17" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 18" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 19" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 20" class="btnAct">
+                </div> -->
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 21" class="btnAct">
+                    <p>parrafo Ejercicio 021</p>
+                    <p>Programa en javascript para devolver el numero mayor
+                        de dos numero enteros diferentes ingresados</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 22" class="btnAct">
+                    <p>parrafo Ejercicio 022</p>
+                    <p>Programa en javascript para determinar si un numero es:
+                        positivo, negativo, neutro. </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 23" class="btnAct">
+                    <p>Parrafo Ejercicio 023</p>
+                    <p> Programa en javascript para ingresar un caracter
+                        y deducir si es una vocal </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 24" class="btnAct">
+                    <p>Parrafo Ejercicio 024</p>
+                    <p>Programa en javascript para determinar si un
+                        numero es multiplo de 3 y de 5. </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 25" class="btnAct">
+                    <p>Parrafo Ejercicio 025</p>
+                    <p>Programa en javascript para determinar
+                        si un numero es par o impar</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 26" class="btnAct">
+                    <p>Parafo Ejercicio 026</p>
+                    <p>Programa en javascript para comparar tres
+                        numeros y devolver el numero de mayor valor</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 27" class="btnAct">
+                    <p>Parrafo Ejercicio 027</p>
+                    <p>Programa en javascript para devolver el doble del
+                        numero si es par en caso contrario devolver el triple</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 28" class="btnAct">
+                    <p>Parrafo Ejercicio 028</p>
+                    <p>Programa en javascript para comparar tres
+                        numeros y devolver el numero del mayor valor</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 29" class="btnAct">
+                    <p>Parrafo Ejercicio 029</p>
+                    <p>programa En javascript para calcular ek decuento de
+                        10% en consumos hasta de 100 y descuento del 20%
+                        en consumos mayores a 100. </p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 30" class="btnAct">
+                    <p>Parrafo Ejercicio 030</p>
+                    <p>Programa de javascript para calcular
+                        el descuento del 10% en consumos hasta 100,
+                        descuentos del 20% en consumos mayores a
+                        100 y menores a 200, y 30% a mayores de 300</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 31" class="btnAct">
+                    <p>Parrafo Ejerccio 031</p>
+                    <p>Programa en javascript para Ingresar una temperatura
+                        y calcular el clima menor a 10 = frio,
+                        entre 10 y 20 = nublado,
+                        entre 21 y 30 = calor, mayor = tropical</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 32" class="btnAct">
+                    <p>Parrafo Ejerccio 032</p>
+                    <p>Programa en javascript para ingresar una compra
+                        y dependiendo del monto obtener un descuento
+                        Cliente General 15%, recargo 10%;
+                        CLiente Afiliado 20%, recargo 5%.</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 33" class="btnAct">
+                    <p>Parrafo Ejercicio 033</p>
+                    <p>Programa en javascript para Resolver la
+                        ecuacion del primer grado: ax + b = 0</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 34" class="btnAct">
+                    <p>Parrafo Ejerccio 034</p>
+                    <p>Progrma en javascript para resolver la
+                        ecuacion de segundo grado: ax2 + bx + c = 0</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 35" class="btnAct">
+                    <p>Parrafo Ejerccio 035</p>
+                    <p>Programa en javascript para calcular la hora del
+                        siguiente segundo a partir de la hora, minuto y
+                        segundo ingresada</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 36" class="btnAct">
+                    <p>Parrafo Ejerccio 036</p>
+                    <p>Programa en javascript para determinar si es:
+                        mayor de edad</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 37" class="btnAct">
+                    <p>Parrafo Ejerccio 037</p>
+                    <p>Programa en javascript para determinar si es:
+                        Mayor de edad - modificado</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 38" class="btnAct">
+                    <p>Parrafo Ejerccio 038</p>
+                    <p>Programa en javascript para determinar el descuento
+                        al ingresar el valor a pagar</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 39" class="btnAct">
+                    <p>Parrafo Ejercicio 039</p>
+                    <p>Progrma en javascript para seleccionar una
+                        opcion de un menu</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 40" class="btnAct">
+                    <p>Parrafo Ejercicio 040</p>
+                    <p>Programa en javascript para determinar el valor de una nota</p>
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 41" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 42" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 43" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 44" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 45" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 46" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 47" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 48" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 49" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 50" class="btnAct">
+                </div>
+
+                <div class="contAct">
+                    <input type="button" value="Actividad 51" class="btnAct">
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <div class="scroll">
         <div class="img" id="tocamexd">
             <img src="img/dawae.gif">
+        </div>
+        <div style='text-align: center;padding: 1%;'>
+            <input type="button" value="Ir a actividadesde JS" class="btn">
         </div>
         <table id="tabla" cellpadding="5" cellspacing="0">
             <thead>
