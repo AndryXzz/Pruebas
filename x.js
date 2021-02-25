@@ -668,10 +668,67 @@ window.onload = () => {
                     }
                     break;
                 case 45:
+                    var nota45 = prompt("Ingresa una nota entre 1 y 10: ");
+                    nota45 = parseInt(nota45);
+                    var valLetras45 = "";
+                    switch (nota45) {
+                        case 1:
+                        case 2:
+                        case 3:
+                        case 4:
+                            valLetras45 = "No Aprobado"
+                            break;
+                        case 5:
+                            valLetras45 = "Aprobado"
+                            break;
+                        case 6:
+                        case 7:
+                            valLetras45 = "Bien"
+                            break;
+                        case 8:
+                        case 9:
 
+                            valLetras45 = "Notable"
+                            break;
+                        case 10:
+                            valLetras45 = "Excelente"
+                            break;
+                        default:
+                            alert("Valor no valido");
+                            break;
+                    }
+                    alert('Valor equivalente:' + valLetras45);
                     break;
                 case 46:
-
+                    const day46 = new Date().getDay();
+                    let valDay46 = ""
+                    switch (day46) {
+                        case 1:
+                            valDay46 = "Feliz Lunes!"
+                            break;
+                        case 2:
+                            valDay46 = "Es Martes, un dia especial"
+                            break;
+                        case 3:
+                            valDay46 = "Miercoles, ya vamos a la mitad"
+                            break;
+                        case 4:
+                            valDay46 = "Es jueves, Solo un dia más para el fin de semana!
+                            break;
+                        case 5:
+                            valDay46 = "Feliz viernes, listos!!"
+                            break;
+                        case 6:
+                            valDay46 = "Que tengan un maravilloso sábado"
+                            break;
+                        case 7:
+                            valDay46 = "Es domingo, hora de relajarse"
+                            break;
+                        default:
+                            alert("No hay dia");
+                            break;
+                    }
+                    alert('Mensaje del dia: !' + valDay46);
                     break;
                 case 47:
 
