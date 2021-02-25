@@ -731,7 +731,30 @@ window.onload = () => {
                     alert('Mensaje del dia: !' + valDay46);
                     break;
                 case 47:
-
+                    var grade = prompt("Ingresa una nota entre 1 y 100: ");
+                    grade = Number(grade);
+                    var valLetras47 = 1;
+                    switch (true) {
+                        case grade >= 90:
+                            valLetras47 = "A";
+                            break;
+                        case grade >= 80:
+                            valLetras47 = "B";
+                            break;
+                        case grade >= 80:
+                            valLetras47 = "C";
+                            break;
+                        case grade >= 70:
+                            valLetras47 = "D";
+                            break;
+                        case grade >= 60:
+                            valLetras47 = "E";
+                            break;
+                        default:
+                            alert("Valor no valido");
+                            break;
+                    }
+                    alert('Valor equivalente:' + valLetras47);
                     break;
                 case 48:
 
