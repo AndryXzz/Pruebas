@@ -713,7 +713,7 @@ window.onload = () => {
                             valDay46 = "Miercoles, ya vamos a la mitad"
                             break;
                         case 4:
-                            valDay46 = "Es jueves, Solo un dia más para el fin de semana!
+                            valDay46 = "Es jueves, Solo un dia más para el fin de semana!"
                             break;
                         case 5:
                             valDay46 = "Feliz viernes, listos!!"
@@ -757,27 +757,315 @@ window.onload = () => {
                     alert('Valor equivalente:' + valLetras47);
                     break;
                 case 48:
-
+                    var tecing48 = prompt("Presiona una tecla: ");
+                    var typNum48 = Number(tecing48);
+                    var res48 = ''
+                    if (!(isNaN(typNum48))) {
+                        res48 = typeof (typNum48);
+                    } else {
+                        res48 = typeof (tecing48);
+                    }
+                    switch (res48) {
+                        case 'number':
+                            est = "un numero";
+                            break;
+                        case 'string':
+                            est = "un caracter"
+                            break;
+                        default:
+                            console.log('default');
+                            break;
+                    }
+                    alert('La tecla presionada es: ' + est);
                     break;
                 case 49:
+                    let a49 = prompt("Ingresa un año (AAAA)")
+                    a49 = Number(a49)
+                    let m49 = prompt("Ingresa un mes: ")
+                    m49 = Number(m49)
+                    let d49;
+                    switch (m49) {
+                        case 1:
+                            d49 = 31
+                            m49 = "ENERO"
+                            break;
+                        case 2:
+                            d49 = a49 % 4 == 0 && (a49 % 100 != 0 || a49 % 400 == 0) ? 29 : 28
+                            m49 = "FEBRERO"
+                            break;
+                        case 3:
+                            d49 = 31
+                            m49 = "MARZO"
+                            break;
+                        case 4:
+                            d49 = 30
+                            m49 = "ABRIL"
+                            break;
+                        case 5:
+                            d49 = 31
+                            m49 = "MAYO"
+                            break;
+                        case 6:
+                            d49 = 30
+                            m49 = "JUNIO"
+                            break;
+                        case 7:
+                            d49 = 31
+                            m49 = "JULIO"
+                            break;
+                        case 8:
+                            d49 = 31
+                            m49 = "AGOSTO"
+                            break;
+                        case 9:
+                            d49 = 30
+                            m49 = "SEPTIEMBRE"
+                            break;
+                        case 10:
+                            d49 = 31
+                            m49 = "OCTUBRE"
+                            break;
+                        case 11:
+                            d49 = 30
+                            m49 = "NOVIEMBRE"
+                            break;
+                        case 12:
+                            d49 = 31
+                            m49 = "DICIEMBRE"
+                            break;
 
+                        default:
+                            break;
+                    }
+                    alert(`Mes: ${m49} Día: ${d49}`)
                     break;
                 case 50:
+                    let num50 = prompt("ingresa un número entre 0 y 99")
+                    num50 = parseInt(num50)
+                    if (10 <= num50 && num50 <= 15) {
+                        switch (num50) {
+                            case 10:
+                                alert("diez")
+                                break;
+                            case 11:
+                                alert("once")
+                                break;
+                            case 12:
+                                alert("doce")
+                                break;
+                            case 13:
+                                alert("trece")
+                                break;
+                            case 14:
+                                alert("catorce")
+                                break;
+                            case 15:
+                                alert("quince")
+                                break;
 
+                        }
+                    } else {
+                        let unidades50 = num50 % 10;
+                        let decenas50 = Math.floor(num / 10)
+                        switch (decenas50) {
+                            case 0:
+                                alert("")
+                                break;
+                            case 1:
+                                alert("dieci")
+                                break;
+                            case 2:
+                                alert("venti")
+                                break;
+                            case 3:
+                                alert("treinta")
+                                break;
+                            case 4:
+                                alert("cuarenta")
+                                break;
+                            case 5:
+                                alert("cincuenta")
+                                break;
+                            case 6:
+                                alert("sesenta")
+                                break;
+                            case 7:
+                                alert("setenta")
+                                break;
+                            case 8:
+                                alert("ochenta")
+                                break;
+                            case 9:
+                                alert("noventa")
+                                break;
+
+                        }
+                        if (decenas50 != 0 && decenas50 != 1 && decenas50 != 0) {
+                            alert(" y ")
+                        }
+
+                        switch (unidades50) {
+                            case 0:
+                                if (decenas50 == 0) {
+                                    alert("cero")
+                                }
+                                break;
+                            case 1:
+                                alert("uno")
+                                break;
+                            case 2:
+                                alert("dos")
+                                break;
+                            case 3:
+                                alert("tres")
+                                break;
+                            case 4:
+                                alert("cuatro")
+                                break;
+                            case 5:
+                                alert("cinco")
+                                break;
+                            case 6:
+                                alert("seis")
+                                break;
+                            case 7:
+                                alert("siete")
+                                break;
+                            case 8:
+                                alert("ocho")
+                                break;
+                            case 9:
+                                alert("nueve")
+                                break;
+                        }
+                    }
                     break;
                 case 51:
+                    let n51 = prompt("Ingresa un número menor a 4000")
+                    let r51, u51, d51, c51, m51;
+                    if (n51 <= 3999) {
+                        u51 = n51 % 10;
+                        d51 = n51 % 10;
+                        c51 = n51 % 10;
+                        m51 = n51 % 10;
+                        // r51 = n51 % 10;
+                        switch (m51) {
+                            case 1:
+                                r51 = "M"
+                                break;
+                            case 2:
+                                r51 = "MM"
+                                break;
+                            case 3:
+                                r51 = "MMM"
+                                break;
+                        }
+                        switch (c51) {
+                            case 1:
+                                r51 = r51 + "C";
+                                break;
+                            case 2:
+                                r51 = r51 + "CC";
+                                break;
+                            case 3:
+                                r51 = r51 + "CCC";
+                                break;
+                            case 4:
+                                r51 = r51 + "CD";
+                                break;
+                            case 5:
+                                r51 = r51 + "D";
+                                break;
+                            case 6:
+                                r51 = r51 + "DC";
+                                break;
+                            case 7:
+                                r51 = r51 + "DCC";
+                                break;
+                            case 8:
+                                r51 = r51 + "DCCC";
+                                break;
+                            case 9:
+                                r51 = r51 + "CM";
+                                break;
 
+                        }
+
+                        switch (d51) {
+                            case 1:
+                                r51 = r51 + "X";
+                                break;
+                            case 2:
+                                r51 = r51 + "XX";
+                                break;
+                            case 3:
+                                r51 = r51 + "XXX";
+                                break;
+                            case 4:
+                                r51 = r51 + "XL";
+                                break;
+                            case 5:
+                                r51 = r51 + "L";
+                                break;
+                            case 6:
+                                r51 = r51 + "LX";
+                                break;
+                            case 7:
+                                r51 = r51 + "LXX";
+                                break;
+                            case 8:
+                                r51 = r51 + "LXXX";
+                                break;
+                            case 9:
+                                r51 = r51 + "XC";
+                                break;
+                        }
+
+                        switch (u51) {
+                            case 1:
+                                r51 = r51 + "I";
+                                break;
+                            case 2:
+                                r51 = r51 + "II";
+                                break;
+                            case 3:
+                                r51 = r51 + "III";
+                                break;
+                            case 4:
+                                r51 = r51 + "IV";
+                                break;
+                            case 5:
+                                r51 = r51 + "V";
+                                break;
+                            case 6:
+                                r51 = r51 + "VI";
+                                break;
+                            case 7:
+                                r51 = r51 + "VII";
+                                break;
+                            case 8:
+                                r51 = r51 + "VIII";
+                                break;
+                            case 9:
+                                r51 = r51 + "IX";
+                                break;
+                        }
+                        alert(`en números romanos: ${r51}`)
+                    }
                     break;
 
             }
         })
-    }
-    window.onclick = (event) => {
-        if (event.target == modal) modal.style.display = "none"
     }
     button.addEventListener('click',
         () => {
             modal.style.display = "block"
             // alert('<h3>aaaaa</h3>')
         })
+    window.onclick = (event) => {
+    console.log(event.target)        
+    console.log(modal)        
+    console.log();
+        if (event.target == modal) modal.style.display = "none"
+    }
 }
