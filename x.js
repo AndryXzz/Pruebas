@@ -545,16 +545,127 @@ window.onload = () => {
                         alert("suspenso");
                     break;
                 case 41:
+                    let num41 = prompt("ingresa un número entre 1 y 4")
+                    let est;
+                    num41 = parseInt(num41);
+                    switch (num41) {
+                        case 1:
+                            est = "Verano";
+                            break;
+                        case 2:
+                            est = "Otoño";
+                            break;
+                        case 3:
+                            est = "Invierno";
+                            break;
+                        case 4:
+                            est = "Primavera";
+                            break;
 
+                        default:
+                            est = null
+                            break;
+                    }
+                    if (est) {
+                        alert(`Estación: ${est}`)
+                    } else {
+                        alert("valor ingresado no válido")
+                    }
                     break;
                 case 42:
+                    let num42 = prompt("Ingresa un número entre 0 y 9");
+                    let letras42;
+                    num42 = parseInt(num42);
+                    switch (num42) {
+                        case 0:
+                            letras42 = "Cero";
+                            break;
+                        case 1:
+                            letras42 = "Uno";
+                            break;
+                        case 2:
+                            letras42 = "Dos";
+                            break;
+                        case 3:
+                            letras42 = "Tres";
+                            break;
+                        case 4:
+                            letras42 = "Cuatro";
+                            break;
+                        case 5:
+                            letras42 = "Cinco";
+                            break;
+                        case 6:
+                            letras42 = "Seis";
+                            break;
+                        case 7:
+                            letras42 = "Siete";
+                            break;
+                        case 8:
+                            letras42 = "Ocho";
+                            break;
+                        case 9:
+                            letras42 = "Nueve";
+                            break;
 
+                        default:
+                            letras42 = null
+                            break;
+                    }
+                    if (letras42) {
+                        alert("En letras: ", letras42)
+                    } else {
+                        alert("valor ingresado no válido")
+                    }
                     break;
                 case 43:
+                    var operacion = prompt("Ingrese una operacion" + "\n+ para suma" + "\n - para resta" + "\n * para multiplicacion" + "\n / para " + "\nElija una opción: ");
+                    numero143 = prompt("Ingresa el primer numero: ");
+                    numero143 = parseInt(numero143);
+                    numero243 = prompt("Ingresa el segundo numero: ");
+                    numero243 = parseInt(numero243);
+                    var res43 = 0;
+                    switch (operacion) {
+                        case '+':
+                            res = numero143 + numero243;
+                            break;
+                        case '-':
+                            res = numero143 - numero243;
+                            break;
+                        case '*':
+                            res = numero143 * numero243;
+                            break;
+                        case '/':
+                            res = numero143 / numero243;
+                            break;
+                        default:
+                            console.log('default');
+                            break;
+                    }
+                    alert('Resultado:' + res43);
 
                     break;
                 case 44:
-
+                    var edad44;
+                    edad44 = prompt('Por favor ingresa tu edad: ');
+                    if (edad44 == "") {
+                        alert('No has ingresado una edad');
+                    }
+                    edad44 = Number(edad44);
+                    switch (edad44) {
+                        case 0:
+                            alert("Acaba de nacer. No has cumplido un año");
+                            break;
+                        case 18:
+                            alert("Está justo en la mayoría de edad");
+                            break;
+                        case 65:
+                            alert("Está en la edad de jubilación");
+                            break;
+                        default:
+                            alert("La edad no es critica");
+                            break;
+                    }
                     break;
                 case 45:
 
