@@ -1063,9 +1063,8 @@ window.onload = () => {
             // alert('<h3>aaaaa</h3>')
         })
     window.onclick = (event) => {
-    console.log(event.target)        
-    console.log(modal)        
-    console.log();
+        console.log(event.target)
+        console.log(modal)
         if (event.target == modal) modal.style.display = "none"
     }
 }

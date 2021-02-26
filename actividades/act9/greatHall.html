@@ -1,55 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great Hall</title>
     <style>
-        *{font-family: Tahoma;}
-        #Information{background: #EEE; padding: 10px 20px;}
-        #Information p{font-size: 12px;}
-        .footnote{font-size: 10px;}
+        body {
+            margin-top: 0;
+        }
+
+        * {
+            font-family: Tahoma;
+        }
+
+        #Information {
+            background: #EEE;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        #Information p {
+            font-size: 12px;
+        }
+
+        .footnote {
+            font-size: 10px;
+        }
+
+        h1 {
+            background-color: #36251e;
+            text-align: center;
+            color: white;
+            padding: 1em 0px;
+            margin: 13px 0px 0px;
+            border-top-left-radius: 29px;
+            box-shadow: inset 0px 0px 14px;
+            border-top-right-radius: 29px;
+        }
+
+
+        h2 {
+            background-color: #aea888;
+            color: white;
+            padding: 2em;
+            border-radius: 10px;
+        }
+
+        h3 {
+            background-color: #1b0801;
+            color: wheat;
+            padding: 17px 0px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+
+
+        .menu {
+            background-color: #d1b977;
+            text-align: center;
+            padding: 11px;
+        }
+
+        ol,
+        ul {
+            display: inline-block;
+            text-align: initial;
+        }
+
+        .img {
+            position: relative;
+            left: -8px;
+            width: 101.23%;
+            text-align: center;
+            background: #1b0801;
+            padding-bottom: 19px;
+        }
+
+        #DinnerOptions,
+        #Desserts,
+        #Beverage {
+            background-color: #4d4230;
+            border-radius: 10px 10px 0px 0px;
+            color: white;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+        .location {
+            background-color: #4d4230;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            letter-spacing: 5px;
+            border-top: 2px white dotted;
+        }
     </style>
 </head>
+
 <body>
-    <img src="../../img/GreatHall.jpg">
+    <div class="img">
+        <img src="../../img/GreatHall.jpg">
+    </div>
     <h1>Gran salón Menú para el Almuerzo</h1>
-    <h2>Bienvenidos al Gran Salón de Hogwarts</h2>
-    <div id="Information">
-        <p><strong>Tenga en cuenta:</strong></p>
-        <p>Desayuno, <a href="lunchmenu.html">Almuerzo</a> así sirve aquí en le Gran Salón.
-            Todos los estudiante sde Hogwarts van a tomar sus alimentos juntos con sus respectivas compañeros.
-            Si recibes un buhó a la entrada, por davor limpia después de cualquier desorden realizado por dicho búho.
-        </p>
+    <div class="menu">
+
+
+        <h2>Bienvenidos al Gran Salón de Hogwarts</h2>
+        <div id="Information">
+            <p><strong>Tenga en cuenta:</strong></p>
+            <p>Desayuno, <a href="lunchmenu.html">Almuerzo</a> así sirve aquí en le Gran Salón.
+                Todos los estudiante sde Hogwarts van a tomar sus alimentos juntos con sus respectivas compañeros.
+                Si recibes un buhó a la entrada, por davor limpia después de cualquier desorden realizado por dicho
+                búho.
+            </p>
+        </div>
+        <div id="DinnerOptions">
+            <h3>Dinner Options</h3>
+            <p>Cada opción viene con su elección de bebida más una porción de tarta de dragón y un postre.</p>
+            <ol>
+                <li>Pollo Asado</li>
+                <li>Steak-and-Kidney Pudding</li>
+            </ol>
+        </div>
+        <div id="Desserts">
+            <h3>Postres</h3>
+            <ul>
+                <li>Cauldron Cake</li>
+                <li>Rock Cake</li>
+                <li>Treacle Tart</li>
+                <li>Chocolate Frog</li>
+            </ul>
+        </div>
+        <div id="Beverage">
+            <h3>Bebidas</h3>
+            <ul>
+                <li>McSpratts</li>
+                <li>Butterbeer</li>
+                <li>Exploding Lemonade</li>
+                <li>gillywater</li>
+                <li>Pumpkin Juice</li>
+            </ul>
+        </div>
+        <div class="location">
+
+            <h4>Ubicación</h4>
+            <p>Hofwarts Castle <br> Scotland <br> United Kingdom</p>
+        </div>
     </div>
-    <div id="DinnerOptions">
-        <h3>Dinner Options</h3>
-        <p>Cada opción viene con su elección de bebida más una porción de tarta de dragón y un postre.</p>
-        <ol>
-            <li>Pollo Asado</li>
-            <li>Steak-and-Kidney Pudding</li>
-        </ol>
-    </div>
-    <div id="Desserts">
-        <h3>Postres</h3>
-        <ul>
-            <li>Cauldron Cake</li>
-            <li>Rock Cake</li>
-            <li>Treacle Tart</li>
-            <li>Chocolate Frog</li>
-        </ul>
-    </div>
-    <div id="Beverage">
-        <h3>Bebidas</h3>
-        <ul>
-            <li>McSpratts</li>
-            <li>Butterbeer</li>
-            <li>Exploding Lemonade</li>
-            <li>gillywater</li>
-            <li>Pumpkin Juice</li>
-        </ul>
-    </div>
-    <h4>Ubicación</h4>
-    <p>Hofwarts Castle <br> Scotland <br> United Kingdom</p>
 </body>
+
 </html>
